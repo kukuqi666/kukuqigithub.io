@@ -19,7 +19,7 @@ after_script:
 
 branches:
   only:
-    - main
+    - hexo
 
 env:
  global:
