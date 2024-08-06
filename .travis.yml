@@ -23,4 +23,4 @@ branches:
 
 env:
  global:
-   - GH_REF: github.com/blinkfox/kukuqi666.github.io.git
+   - GH_REF: github.com/kukuqi666/kukuqi666.github.io.git
