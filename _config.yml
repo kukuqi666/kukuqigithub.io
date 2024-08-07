@@ -13,7 +13,7 @@ timezone: ''
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://example.com/child' and root as '/child/'
-url: https://kukuqi666.github.io/
+url: https://kukuqi666.github.io
 root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:
@@ -104,7 +104,8 @@ theme: hexo-theme-matery
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
   type: git
-  repo: https://github.com/kukuqi666/kukuqi666.github.io.git
+  repo: git@github.com:kukuqi666/kukuqi666.github.io.git
+  branch: gh-pages
 
 search:
   path: search.xml
