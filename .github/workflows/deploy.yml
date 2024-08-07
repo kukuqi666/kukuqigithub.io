@@ -32,3 +32,4 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}  # 使用 GitHub 提供的 Token 进行认证
           publish_dir: ./public  # 指定发布目录
           publish_branch: gh-pages  # 指定发布的分支
+          force_orphan: true
