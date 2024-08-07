@@ -205,32 +205,32 @@ profile:
 myProjects:
   enable: true
   data:
-    hexo-theme-matery:
+    Game-Cheats-Manager:
       icon: fas fa-rocket
       iconBackground: 'linear-gradient(to bottom right, #66BB6A 0%, #81C784 100%)'
       url: http://github.com/kukuqi666/Game-Cheats-Manager
       desc: 轻松下载和管理游戏秘籍，为您提供方便 
-    Fenix:
+    mkdocs:
       icon: fas fa-database
       iconBackground: 'linear-gradient(to bottom right, #F06292 0%, #EF5350 100%)'
       url: https://github.com/kukuqi666/mkdocs
       desc: 一个基于 MkDocs 构建的文档网站生成器，支持多种语言，支持多种插件，支持多种功能。
-    typora-vue-theme:
+    wpsec:
       icon: fas fa-file-alt
       iconBackground: 'linear-gradient(to bottom right, #29B6F6 0%, #1E88E5 100%)'
       url: https://github.com/kukuqi666/wgpsec
       desc: 一个基于 Vuepress 开发的 Typora 主题，支持多种功能，支持多种语言。
-    stalker:
+    dedecmccan:
       icon: fas fa-compress
       iconBackground: 'linear-gradient(135deg, #e079fc 0%, #7c44ff 100%)'
       url: https://github.com/kukuqi666/dedecmscan
       desc: dedescan是一款可以扫描所有已公开的dedecms漏洞的扫描器。 
-    mini-table:
+    webshell:
       icon: fas fa-table
       iconBackground: 'linear-gradient(135deg, #309286 0%, #32dbc6 100%)'
       url: https://github.com/kukuqi666/webshell-venom
       desc: 一个基于 PHP 的 WebShell 木马生成器，支持多种功能，
-    Java-Style:
+    Linux-service:
       icon: fas fa-coffee
       iconBackground: 'linear-gradient(135deg, #ffeb3b 0%, #ff9900 100%)'
       url: https://github.com/kukuqi666/Linux_service
