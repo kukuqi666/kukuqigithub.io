@@ -12,10 +12,10 @@ excerpt: 通过Python制作网页查询Excel数据 实现简易网页可视化�
 
 ## 1.Excel文件：D:\Python_Project\test\奖牌榜.xlsx，和Python代码在同一目录
 
-![images](https://img2020.cnblogs.com/blog/1837851/202201/1837851-20220108230252678-173634989.png)
+![images(https://img2020.cnblogs.com/blog/1837851/202201/1837851-20220108230252678-173634989.png)](https://img2020.cnblogs.com/blog/1837851/202201/1837851-20220108230252678-173634989.png?size=large)
 
 
-![images](https://img2020.cnblogs.com/blog/1837851/202201/1837851-20220108230317990-1607828126.png) 
+![images(https://img2020.cnblogs.com/blog/1837851/202201/1837851-20220108230317990-1607828126.png)](https://img2020.cnblogs.com/blog/1837851/202201/1837851-20220108230317990-1607828126.png?size=large) 
 
 
 ## 2.代码test2.py：
@@ -56,7 +56,7 @@ app.run(host="0.0.0.0", port=9999)
 
 ## 3.运行：
 
-![images](https://img2020.cnblogs.com/blog/1837851/202201/1837851-20220108230337990-1292105602.png)
+![images(https://img2020.cnblogs.com/blog/1837851/202201/1837851-20220108230337990-1292105602.png)](https://img2020.cnblogs.com/blog/1837851/202201/1837851-20220108230337990-1292105602.png?size=large)
 
 ## 4.验证：
 
@@ -70,18 +70,18 @@ app.run(host="0.0.0.0", port=9999)
     tasklist | findstr "1480"
     ```
     
-![images](https://img2020.cnblogs.com/blog/1837851/202201/1837851-20220108230348502-1066586872.png)
+![images(https://img2020.cnblogs.com/blog/1837851/202201/1837851-20220108230348502-1066586872.png)](https://img2020.cnblogs.com/blog/1837851/202201/1837851-20220108230348502-1066586872.png?size=large)
 
 
 （3）浏览器访问：192.168.0.100:9999/query
 
-![images](https://img2020.cnblogs.com/blog/1837851/202201/1837851-20220108230403509-1223871112.png)
+![images(https://img2020.cnblogs.com/blog/1837851/202201/1837851-20220108230403509-1223871112.png)](https://img2020.cnblogs.com/blog/1837851/202201/1837851-20220108230403509-1223871112.png?size=large)
 
 
-![images](https://img2020.cnblogs.com/blog/1837851/202201/1837851-20220108230410500-256908978.png)
+![images(https://img2020.cnblogs.com/blog/1837851/202201/1837851-20220108230410500-256908978.png)](https://img2020.cnblogs.com/blog/1837851/202201/1837851-20220108230410500-256908978.png?size=large)
 
  
-![images](https://img2020.cnblogs.com/blog/1837851/202201/1837851-20220108230416238-1249719073.png) 
+![images(https://img2020.cnblogs.com/blog/1837851/202201/1837851-20220108230416238-1249719073.png)](https://img2020.cnblogs.com/blog/1837851/202201/1837851-20220108230416238-1249719073.png?size=large) 
 
  
 
