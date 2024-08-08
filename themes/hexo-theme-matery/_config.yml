@@ -171,7 +171,7 @@ copyright:
 # 是否激活mathjax数学公式，这是全局配置，但文章仍然不会都开启mathjax渲染，
 # 考虑到mathjax加载比较耗时，你还需要在需要渲染的文章的Front-matter中再加上`mathjax: true`才行.
 mathjax:
-  enable: false
+  enable: true
   cdn: https://cdn.bootcss.com/mathjax/2.7.5/MathJax.js?config=TeX-AMS-MML_HTMLorMML
 
 # Post word count, reading duration, site total word count.
@@ -274,7 +274,13 @@ myGallery:
     - /medias/featureimages/4.jpg
     - /medias/featureimages/5.jpg 
     - /medias/featureimages/6.jpg
-
+    - /medias/featureimages/6.jpg
+    - /medias/featureimages/7.jpg
+    - /medias/featureimages/8.jpg
+    - /medias/featureimages/9.jpg
+    - /medias/featureimages/10.jpg
+    - /medias/featureimages/11.jpg
+    
 # Whether to display post-calender in the `archive` page
 # 设置在归档页面中是否显示'文章日历'控件
 postCalendar: true
@@ -294,7 +300,7 @@ gitalk:
 # the Gitment config，default disabled
 # Gitment 评论模块的配置，默认为不激活
 gitment:
-  enable: false
+  enable: true
   owner: kukuqi666
   repo: kukuqi666.github.io
   oauth:
@@ -307,13 +313,13 @@ gitment:
 # disqus config, default disabled
 # Disqus评论模块的配置，默认为不激活
 disqus:
-  enable: false
+  enable: true
   shortname:
 
 # Livere comment configuration, the default is not activated
 # Livere 来必力评论模块的配置，默认为不激活
 livere:
-  enable: false
+  enable: true
   uid:
 
 # The configuration of the Valine comment module is not activated by default.
@@ -336,7 +342,7 @@ valine:
 # MiniValine 评论模块的配置，默认为不激活，如要使用，就请激活该配置项，并设置 appId 和 appKey.
 # See: https://github.com/MiniValine/MiniValine
 minivaline:
-  enable: false
+  enable: true
   appId: zhM0AOiqle17oPoE84CoYw1e-gzGzoHsz # Your leancloud application appid
   appKey: itmzT1JbXfAjVwMqDhGPzU45 # Your leancloud application appkey
   mode: DesertsP # DesertsP or xCss
@@ -454,7 +460,7 @@ libs:
     crypto: /libs/cryptojs/crypto-js.min.js
     echarts: /libs/echarts/echarts.min.js
     gitalk: /libs/gitalk/gitalk.min.js
-    valine: /libs/valine/Valine.min.js # 若想保持最新版，请替换为 https://unpkg.com/valine/dist/Valine.min.js  默认为 /libs/valine/Valine.min.js
+    valine: https://unpkg.com/valine/dist/Valine.min.js # 若想保持最新版，请替换为 https://unpkg.com/valine/dist/Valine.min.js  默认为 /libs/valine/Valine.min.js
     minivaline: /libs/minivaline/MiniValine.js
     jqcloud: /libs/jqcloud/jqcloud-1.0.4.min.js
     tocbot: /libs/tocbot/tocbot.min.js
