@@ -1,0 +1,1465 @@
+<!DOCTYPE HTML>
+<html lang="zh-CN">
+
+
+<head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="Zsh 安装与配置，使用 Oh-My-Zsh 美化终端, 如梦初醒, kukuqi666">
+    <meta name="description" content="从来没有真正的绝境，只有心灵的迷途">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="renderer" content="webkit|ie-stand|ie-comp">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+
+
+    <title>Zsh 安装与配置，使用 Oh-My-Zsh 美化终端 | 如梦初醒</title>
+    <link rel="icon" type="image/png" href="/favicon.png">
+
+    <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
+    <link rel="stylesheet" type="text/css" href="/libs/materialize/materialize.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/aos/aos.css">
+    <link rel="stylesheet" type="text/css" href="/libs/animate/animate.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/lightGallery/css/lightgallery.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/matery.css">
+    <link rel="stylesheet" type="text/css" href="/css/my.css">
+
+    <script src="/libs/jquery/jquery.min.js"></script>
+
+<meta name="generator" content="Hexo 5.4.2"><link rel="alternate" href="/atom.xml" title="如梦初醒" type="application/atom+xml">
+</head>
+
+
+
+   <style>
+    body{
+       background-image: url(https://cdn.jsdelivr.net/gh/Tokisaki-Galaxy/res/site/medias/background.jpg);
+       background-repeat:no-repeat;
+       background-size:cover;
+       background-attachment:fixed;
+    }
+</style>
+
+
+
+<body>
+    <header class="navbar-fixed">
+    <nav id="headNav" class="bg-color nav-transparent">
+        <div id="navContainer" class="nav-wrapper container">
+            <div class="brand-logo">
+                <a href="/" class="waves-effect waves-light">
+                    
+                    <img src="/medias/logo.png" class="logo-img" alt="LOGO">
+                    
+                    <span class="logo-span">如梦初醒</span>
+                </a>
+            </div>
+            
+
+<a href="#" data-target="mobile-nav" class="sidenav-trigger button-collapse"><i class="fas fa-bars"></i></a>
+<ul class="right nav-menu">
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/" class="waves-effect waves-light">
+      
+      <i class="fas fa-home" style="zoom: 0.6;"></i>
+      
+      <span>首页</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/tags" class="waves-effect waves-light">
+      
+      <i class="fas fa-tags" style="zoom: 0.6;"></i>
+      
+      <span>标签</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/categories" class="waves-effect waves-light">
+      
+      <i class="fas fa-bookmark" style="zoom: 0.6;"></i>
+      
+      <span>分类</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/archives" class="waves-effect waves-light">
+      
+      <i class="fas fa-archive" style="zoom: 0.6;"></i>
+      
+      <span>归档</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/about" class="waves-effect waves-light">
+      
+      <i class="fas fa-user-circle-o" style="zoom: 0.6;"></i>
+      
+      <span>关于</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/friends" class="waves-effect waves-light">
+      
+      <i class="fas fa-address-book" style="zoom: 0.6;"></i>
+      
+      <span>友情链接</span>
+    </a>
+    
+  </li>
+  
+  <li>
+    <a href="#searchModal" class="modal-trigger waves-effect waves-light">
+      <i id="searchIcon" class="fas fa-search" title="搜索" style="zoom: 0.85;"></i>
+    </a>
+  </li>
+</ul>
+
+
+<div id="mobile-nav" class="side-nav sidenav">
+
+    <div class="mobile-head bg-color">
+        
+        <img src="/medias/logo.png" class="logo-img circle responsive-img">
+        
+        <div class="logo-name">如梦初醒</div>
+        <div class="logo-desc">
+            
+            从来没有真正的绝境，只有心灵的迷途
+            
+        </div>
+    </div>
+
+    
+
+    <ul class="menu-list mobile-menu-list">
+        
+        <li class="m-nav-item">
+	  
+		<a href="/" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-home"></i>
+			
+			首页
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/tags" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-tags"></i>
+			
+			标签
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/categories" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-bookmark"></i>
+			
+			分类
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/archives" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-archive"></i>
+			
+			归档
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/about" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-user-circle-o"></i>
+			
+			关于
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/friends" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-address-book"></i>
+			
+			友情链接
+		</a>
+          
+        </li>
+        
+        
+        <li><div class="divider"></div></li>
+        <li>
+            <a href="https://github.com/kukuqi666/kukuqi666.github.io" class="waves-effect waves-light" target="_blank">
+                <i class="fab fa-github-square fa-fw"></i>Home page
+            </a>
+        </li>
+        
+    </ul>
+</div>
+
+
+        </div>
+
+        
+            <style>
+    .nav-transparent .github-corner {
+        display: none !important;
+    }
+
+    .github-corner {
+        position: absolute;
+        z-index: 10;
+        top: 0;
+        right: 0;
+        border: 0;
+        transform: scale(1.1);
+    }
+
+    .github-corner svg {
+        color: #0f9d58;
+        fill: #fff;
+        height: 64px;
+        width: 64px;
+    }
+
+    .github-corner:hover .octo-arm {
+        animation: a 0.56s ease-in-out;
+    }
+
+    .github-corner .octo-arm {
+        animation: none;
+    }
+
+    @keyframes a {
+        0%,
+        to {
+            transform: rotate(0);
+        }
+        20%,
+        60% {
+            transform: rotate(-25deg);
+        }
+        40%,
+        80% {
+            transform: rotate(10deg);
+        }
+    }
+</style>
+
+<a href="https://github.com/kukuqi666/kukuqi666.github.io" class="github-corner tooltipped hide-on-med-and-down" target="_blank"
+   data-tooltip="Home page" data-position="left" data-delay="50">
+    <svg viewBox="0 0 250 250" aria-hidden="true">
+        <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
+        <path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2"
+              fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path>
+        <path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z"
+              fill="currentColor" class="octo-body"></path>
+    </svg>
+</a>
+        
+    </nav>
+
+</header>
+
+    
+
+
+
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/2.jpg')">
+    <div class="container" style="right: 0px;left: 0px;">
+        <div class="row">
+            <div class="col s12 m12 l12">
+                <div class="brand">
+                    <h1 class="description center-align post-title">Zsh 安装与配置，使用 Oh-My-Zsh 美化终端</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<main class="post-container content">
+
+    
+    <link rel="stylesheet" href="/libs/tocbot/tocbot.css">
+<style>
+    #articleContent h1::before,
+    #articleContent h2::before,
+    #articleContent h3::before,
+    #articleContent h4::before,
+    #articleContent h5::before,
+    #articleContent h6::before {
+        display: block;
+        content: " ";
+        height: 100px;
+        margin-top: -100px;
+        visibility: hidden;
+    }
+
+    #articleContent :focus {
+        outline: none;
+    }
+
+    .toc-fixed {
+        position: fixed;
+        top: 64px;
+    }
+
+    .toc-widget {
+        width: 345px;
+        padding-left: 20px;
+    }
+
+    .toc-widget .toc-title {
+        padding: 35px 0 15px 17px;
+        font-size: 1.5rem;
+        font-weight: bold;
+        line-height: 1.5rem;
+    }
+
+    .toc-widget ol {
+        padding: 0;
+        list-style: none;
+    }
+
+    #toc-content {
+        padding-bottom: 30px;
+        overflow: auto;
+    }
+
+    #toc-content ol {
+        padding-left: 10px;
+    }
+
+    #toc-content ol li {
+        padding-left: 10px;
+    }
+
+    #toc-content .toc-link:hover {
+        color: #42b983;
+        font-weight: 700;
+        text-decoration: underline;
+    }
+
+    #toc-content .toc-link::before {
+        background-color: transparent;
+        max-height: 25px;
+
+        position: absolute;
+        right: 23.5vw;
+        display: block;
+    }
+
+    #toc-content .is-active-link {
+        color: #42b983;
+    }
+
+    #floating-toc-btn {
+        position: fixed;
+        right: 15px;
+        bottom: 76px;
+        padding-top: 15px;
+        margin-bottom: 0;
+        z-index: 998;
+    }
+
+    #floating-toc-btn .btn-floating {
+        width: 48px;
+        height: 48px;
+    }
+
+    #floating-toc-btn .btn-floating i {
+        line-height: 48px;
+        font-size: 1.4rem;
+    }
+</style>
+<div class="row">
+    <div id="main-content" class="col s12 m12 l9">
+        <!-- 文章内容详情 -->
+<div id="artDetail">
+    <div class="card">
+        <div class="card-content article-info">
+            <div class="row tag-cate">
+                <div class="col s7">
+                    
+                    <div class="article-tag">
+                        
+                            <a href="/tags/exploit-%E7%BB%88%E7%AB%AF-oh-my-zsh/">
+                                <span class="chip bg-color">exploit 终端 oh-my-zsh</span>
+                            </a>
+                        
+                    </div>
+                    
+                </div>
+                <div class="col s5 right-align">
+                    
+                    <div class="post-cate">
+                        <i class="fas fa-bookmark fa-fw icon-category"></i>
+                        
+                            <a href="/categories/Exploit/" class="post-category">
+                                Exploit
+                            </a>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+
+            <div class="post-info">
+                
+                <div class="post-date info-break-policy">
+                    <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
+                    2024-08-08
+                </div>
+                
+
+                
+
+                
+                <div class="info-break-policy">
+                    <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
+                    1.7k
+                </div>
+                
+
+                
+                <div class="info-break-policy">
+                    <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
+                    7 分
+                </div>
+                
+
+                
+                    <div id="busuanzi_container_page_pv" class="info-break-policy">
+                        <i class="far fa-eye fa-fw"></i>阅读次数:&nbsp;&nbsp;
+                        <span id="busuanzi_value_page_pv"></span>
+                    </div>
+				
+            </div>
+        </div>
+        <hr class="clearfix">
+
+        <link rel="stylesheet" href="/libs/prism/prism.css">
+        <!-- 代码块折行 -->
+        
+
+        <div class="card-content article-card-content">
+            <div id="articleContent">
+                <h1 id="Zsh-安装与配置，使用-Oh-My-Zsh-美化终端"><a href="#Zsh-安装与配置，使用-Oh-My-Zsh-美化终端" class="headerlink" title="Zsh 安装与配置，使用 Oh-My-Zsh 美化终端"></a>Zsh 安装与配置，使用 Oh-My-Zsh 美化终端</h1><p><img src="https://cdn.haoyep.com/gh/leegical/Blog_img/cdnimg/202401171435767.png" alt="images"></p>
+<p>传统的 bash 功能比较简陋，且不美观。本文基于 Ubuntu22.04 LTS 系统，安装 zsh，并使用 oh-my-zsh 对终端进行美化。Oh My Zsh 是基于 zsh 命令行的一个扩展工具集，提供了丰富的扩展功能。</p>
+<h2 id="1-环境配置"><a href="#1-环境配置" class="headerlink" title="1 环境配置"></a>1 环境配置</h2><h3 id="1-1-安装基本工具"><a href="#1-1-安装基本工具" class="headerlink" title="1.1 安装基本工具"></a>1.1 安装基本工具</h3><pre class="line-numbers language-none"><code class="language-none"># 更新软件源
+sudo apt update &amp;&amp; sudo apt upgrade -y
+# 安装 zsh git curl
+sudo apt install zsh git curl -y<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>设置默认终端为 zsh（<strong>注意：不要使用 sudo</strong>）。</p>
+<pre class="line-numbers language-none"><code class="language-none">chsh -s &#x2F;bin&#x2F;zsh<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<h3 id="1-2-安装-oh-my-zsh"><a href="#1-2-安装-oh-my-zsh" class="headerlink" title="1.2 安装 oh-my-zsh"></a>1.2 安装 oh-my-zsh</h3><p>官网：<a target="_blank" rel="noopener" href="http://ohmyz.sh/">http://ohmyz.sh/</a>。 安装方式任选一个即可。</p>
+<table>
+<thead>
+<tr>
+<th>Method</th>
+<th>Command</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>curl</strong></td>
+<td><code>sh -c &quot;$(curl -fsSL https://install.ohmyz.sh/)&quot;</code></td>
+</tr>
+<tr>
+<td><strong>wget</strong></td>
+<td><code>sh -c &quot;$(wget -O- https://install.ohmyz.sh/)&quot;</code></td>
+</tr>
+<tr>
+<td><strong>fetch</strong></td>
+<td><code>sh -c &quot;$(fetch -o - https://install.ohmyz.sh/)&quot;</code></td>
+</tr>
+<tr>
+<td>国内curl<a target="_blank" rel="noopener" href="https://gitee.com/pocmon/ohmyzsh">镜像</a></td>
+<td><code>sh -c &quot;$(curl -fsSL https://gitee.com/pocmon/ohmyzsh/raw/master/tools/install.sh)&quot;</code></td>
+</tr>
+<tr>
+<td>国内wget<a target="_blank" rel="noopener" href="https://gitee.com/pocmon/ohmyzsh">镜像</a></td>
+<td><code>sh -c &quot;$(wget -O- https://gitee.com/pocmon/ohmyzsh/raw/master/tools/install.sh)&quot;</code></td>
+</tr>
+</tbody></table>
+<p>注意：同意使用 Oh-my-zsh 的配置模板覆盖已有的 <code>.zshrc</code>。</p>
+<p><a target="_blank" rel="noopener" href="https://cdn.haoyep.com/gh/leegical/Blog_img/cdnimg/202401012224221.png?size=large"><img src="https://cdn.haoyep.com/gh/leegical/Blog_img/cdnimg/202401012224221.png" alt="安装 oh-my-zsh"></a></p>
+<h2 id="2-配置主题"><a href="#2-配置主题" class="headerlink" title="2 配置主题"></a>2 配置主题</h2><h3 id="2-1-自定义主题"><a href="#2-1-自定义主题" class="headerlink" title="2.1 自定义主题"></a>2.1 自定义主题</h3><pre class="line-numbers language-none"><code class="language-none">sudo wget -O $ZSH_CUSTOM&#x2F;themes&#x2F;haoomz.zsh-theme https:&#x2F;&#x2F;cdn.haoyep.com&#x2F;gh&#x2F;leegical&#x2F;Blog_img&#x2F;zsh&#x2F;haoomz.zsh-theme<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<p>编辑 <code>~/.zshrc</code> 文件，将 <code>ZSH_THEME</code> 设为 <code>haoomz</code>。当然你也可以设置为其他主题，例如<code>lukerandall</code>、<code>robbyrussell</code>。</p>
+<pre class="line-numbers language-none"><code class="language-none">nano ~&#x2F;.zshrc
+
+ZSH_THEME&#x3D;&quot;haoomz&quot;
+
+source ~&#x2F;.zshrc<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p><a target="_blank" rel="noopener" href="https://cdn.haoyep.com/gh/leegical/Blog_img/cdnimg/202401012235958.png?size=large"><img src="https://cdn.haoyep.com/gh/leegical/Blog_img/cdnimg/202401012235958.png" alt="设置ZSH_THEME"></a></p>
+<p>效果如下（<code>robbyrussell</code> → <code>haoomz</code>）：</p>
+<p><a target="_blank" rel="noopener" href="https://cdn.haoyep.com/gh/leegical/Blog_img/cdnimg/202401012238625.png?size=large"><img src="https://cdn.haoyep.com/gh/leegical/Blog_img/cdnimg/202401012238625.png" alt="haoomz主题"></a></p>
+<h3 id="2-2-推荐主题"><a href="#2-2-推荐主题" class="headerlink" title="2.2 推荐主题"></a>2.2 推荐主题</h3><p>你可以在<a target="_blank" rel="noopener" href="https://github.com/ohmyzsh/ohmyzsh/wiki/Themes">内置主题样式截图</a>中查看所有 zsh 内置的主题样式和对应的主题名。这些内置主题已经放在 ～/.oh-my-zsh/themes 目录下，不需要再下载。</p>
+<pre class="line-numbers language-none"><code class="language-none">cd ~&#x2F;.oh-my-zsh&#x2F;themes &amp;&amp; ls<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<p><a target="_blank" rel="noopener" href="https://cdn.haoyep.com/gh/leegical/Blog_img/cdnimg/202401012242407.png?size=large"><img src="https://cdn.haoyep.com/gh/leegical/Blog_img/cdnimg/202401012242407.png" alt="zsh 内置的主题样式"></a></p>
+<h4 id="2-2-1-powerlevel10k"><a href="#2-2-1-powerlevel10k" class="headerlink" title="2.2.1 powerlevel10k"></a>2.2.1 powerlevel10k</h4><p>根据 <a target="_blank" rel="noopener" href="https://www.slant.co/topics/7553/~theme-for-oh-my-zsh">What’s the best theme for Oh My Zsh?</a> 中的排名，以及自定义化、美观程度，强烈建议使用 <a target="_blank" rel="noopener" href="https://github.com/romkatv/powerlevel10k">powerlevel10k</a> 主题。</p>
+<pre class="line-numbers language-none"><code class="language-none">git clone --depth&#x3D;1 https:&#x2F;&#x2F;github.com&#x2F;romkatv&#x2F;powerlevel10k.git $&#123;ZSH_CUSTOM:-$HOME&#x2F;.oh-my-zsh&#x2F;custom&#125;&#x2F;themes&#x2F;powerlevel10k
+
+# 中国用户可以使用 gitee.com 上的官方镜像加速下载
+git clone --depth&#x3D;1 https:&#x2F;&#x2F;gitee.com&#x2F;romkatv&#x2F;powerlevel10k.git $&#123;ZSH_CUSTOM:-$HOME&#x2F;.oh-my-zsh&#x2F;custom&#125;&#x2F;themes&#x2F;powerlevel10k<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>在 <code>~/.zshrc</code> 设置 <code>ZSH_THEME=&quot;powerlevel10k/powerlevel10k&quot;</code>。接下来，终端会自动引导你配置 <code>powerlevel10k</code>。</p>
+<h2 id="3-安装插件"><a href="#3-安装插件" class="headerlink" title="3 安装插件"></a>3 安装插件</h2><p><code>oh-my-zsh</code> 已经内置了 <code>git</code> 插件，内置插件可以在 <code>～/.oh-my-zsh/plugins</code> 中查看，下面介绍一下我常用的插件，更多插件可以在 <a target="_blank" rel="noopener" href="https://github.com/unixorn/awesome-zsh-plugins">awesome-zsh-plugins</a> 里查看。</p>
+<h3 id="3-1-插件推荐"><a href="#3-1-插件推荐" class="headerlink" title="3.1 插件推荐"></a>3.1 插件推荐</h3><h4 id="3-1-1-zsh-autosuggestions"><a href="#3-1-1-zsh-autosuggestions" class="headerlink" title="3.1.1 zsh -autosuggestions"></a>3.1.1 zsh -autosuggestions</h4><p><a target="_blank" rel="noopener" href="https://github.com/zsh-users/zsh-autosuggestions">zsh-autosuggestions</a> 是一个命令提示插件，当你输入命令时，会自动推测你可能需要输入的命令，按下右键可以快速采用建议。效果如下：</p>
+<p><a target="_blank" rel="noopener" href="https://cdn.haoyep.com/gh/leegical/Blog_img/cdnimg/202401012250028.png?size=large"><img src="https://cdn.haoyep.com/gh/leegical/Blog_img/cdnimg/202401012250028.png" alt="zsh-autosuggestions自动补全"></a></p>
+<p>安装方式：把插件下载到本地的 <code>~/.oh-my-zsh/custom/plugins</code> 目录。</p>
+<pre class="line-numbers language-none"><code class="language-none">git clone https:&#x2F;&#x2F;github.com&#x2F;zsh-users&#x2F;zsh-autosuggestions $&#123;ZSH_CUSTOM:-~&#x2F;.oh-my-zsh&#x2F;custom&#125;&#x2F;plugins&#x2F;zsh-autosuggestions<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<h4 id="3-1-2-zsh-syntax-highlighting"><a href="#3-1-2-zsh-syntax-highlighting" class="headerlink" title="3.1.2 zsh-syntax-highlighting"></a>3.1.2 zsh-syntax-highlighting</h4><p><a target="_blank" rel="noopener" href="https://github.com/zsh-users/zsh-syntax-highlighting">zsh-syntax-highlighting</a> 是一个命令语法校验插件，在输入命令的过程中，若指令不合法，则指令显示为红色，若指令合法就会显示为绿色。效果如下：</p>
+<p><a target="_blank" rel="noopener" href="https://cdn.haoyep.com/gh/leegical/Blog_img/cdnimg/202401012252786.png?size=large"><img src="https://cdn.haoyep.com/gh/leegical/Blog_img/cdnimg/202401012252786.png" alt="命令语法校验"></a></p>
+<p>安装方式：把插件下载到本地的 <code>~/.oh-my-zsh/custom/plugins</code> 目录。</p>
+<pre class="line-numbers language-none"><code class="language-none">git clone https:&#x2F;&#x2F;github.com&#x2F;zsh-users&#x2F;zsh-syntax-highlighting.git $&#123;ZSH_CUSTOM:-~&#x2F;.oh-my-zsh&#x2F;custom&#125;&#x2F;plugins&#x2F;zsh-syntax-highlighting<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<h4 id="3-1-3-z"><a href="#3-1-3-z" class="headerlink" title="3.1.3 z"></a>3.1.3 z</h4><p><code>oh-my-zsh</code> 内置了 <code>z</code> 插件。<code>z</code> 是一个文件夹快捷跳转插件，对于曾经跳转过的目录，只需要输入最终目标文件夹名称，就可以快速跳转，避免再输入长串路径，提高切换文件夹的效率。效果如下：</p>
+<p><a target="_blank" rel="noopener" href="https://cdn.haoyep.com/gh/leegical/Blog_img/cdnimg/202401012254065.png?size=large"><img src="https://cdn.haoyep.com/gh/leegical/Blog_img/cdnimg/202401012254065.png" alt="使用z跳转目录"></a></p>
+<h4 id="3-1-4-extract"><a href="#3-1-4-extract" class="headerlink" title="3.1.4 extract"></a>3.1.4 extract</h4><p><code>oh-my-zsh</code> 内置了 <code>extract</code> 插件。<code>extract</code> 用于解压任何压缩文件，不必根据压缩文件的后缀名来记忆压缩软件。使用 <code>x</code> 命令即可解压文件，效果如下：</p>
+<p><a target="_blank" rel="noopener" href="https://cdn.haoyep.com/gh/leegical/Blog_img/cdnimg/202401012259966.png?size=large"><img src="https://cdn.haoyep.com/gh/leegical/Blog_img/cdnimg/202401012259966.png" alt="extract 解压"></a></p>
+<h4 id="3-1-5-web-search"><a href="#3-1-5-web-search" class="headerlink" title="3.1.5 web-search"></a>3.1.5 web-search</h4><p>oh-my-zsh 内置了 <code>web-search</code> 插件。<code>web-search</code> 能让我们在命令行中使用搜索引擎进行搜索。使用<code>搜索引擎关键字+搜索内容</code> 即可自动打开浏览器进行搜索。效果如下：</p>
+<p><a target="_blank" rel="noopener" href="https://cdn.haoyep.com/gh/leegical/Blog_img/cdnimg/202401012302476.png?size=large"><img src="https://cdn.haoyep.com/gh/leegical/Blog_img/cdnimg/202401012302476.png" alt="web-search搜索"></a></p>
+<p>最后，记得<strong>启用所有插件</strong></p>
+<h3 id="3-2-启用插件"><a href="#3-2-启用插件" class="headerlink" title="3.2 启用插件"></a>3.2 启用插件</h3><p>修改<code>~/.zshrc</code>中插件列表为：</p>
+<pre class="line-numbers language-none"><code class="language-none">plugins&#x3D;(git zsh-autosuggestions zsh-syntax-highlighting z extract web-search)<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<p><a target="_blank" rel="noopener" href="https://cdn.haoyep.com/gh/leegical/Blog_img/cdnimg/202401012304774.png?size=large"><img src="https://cdn.haoyep.com/gh/leegical/Blog_img/cdnimg/202401012304774.png" alt="zsh插件列表"></a></p>
+<p>部分插件需要参考<strong>插件介绍</strong>进行安装。</p>
+<p>开启新的 Shell 或执行 <code>source ~/.zshrc</code>，就可以开始体验插件。</p>
+<h2 id="4-Tips"><a href="#4-Tips" class="headerlink" title="4 Tips"></a>4 Tips</h2><h3 id="4-1-root-用户"><a href="#4-1-root-用户" class="headerlink" title="4.1 root 用户"></a>4.1 root 用户</h3><p>当你配置好登陆用户的 zsh 后，如果使用<code>sudo su</code>命令进入<code>root</code>用户的终端，发现还是默认的<code>bash</code>。建议在<code>root</code>用户的终端下，也安装<code>on my zsh</code>，设置与普通用户不同的主题以便区分，插件可以使用一样的。 <code>root</code>用户的<code>~/.zshrc</code>配置，仅供参考：</p>
+<pre class="line-numbers language-none"><code class="language-none">ZSH_THEME&#x3D;&quot;ys&quot;
+plugins&#x3D;(git zsh-autosuggestions zsh-syntax-highlighting z extract web-search)
+# 或
+plugins&#x3D;(git colored-man-pages colorize cp man command-not-found sudo suse ubuntu archlinux zsh-navigation-tools z extract history-substring-search python zsh-autosuggestions zsh-syntax-highlighting)<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h3 id="4-2-配置本地代理"><a href="#4-2-配置本地代理" class="headerlink" title="4.2 配置本地代理"></a>4.2 配置本地代理</h3><p>如果你配置了本地代理，并希望终端的 git 等命令使用代理，那么可以在<code>~/.zshrc</code>中添加：</p>
+<pre class="line-numbers language-none"><code class="language-none"># 为 curl wget git 等设置代理
+proxy () &#123;
+  export ALL_PROXY&#x3D;&quot;socks5:&#x2F;&#x2F;127.0.0.1:1089&quot;
+  export all_proxy&#x3D;&quot;socks5:&#x2F;&#x2F;127.0.0.1:1089&quot;
+&#125;
+
+# 取消代理
+unproxy () &#123;
+  unset ALL_PROXY
+  unset all_proxy
+&#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>这里假设本地代理的端口是<code>1089</code>。</p>
+<p><a target="_blank" rel="noopener" href="https://cdn.haoyep.com/gh/leegical/Blog_img/cdnimg/202401012307093.png?size=large"><img src="https://cdn.haoyep.com/gh/leegical/Blog_img/cdnimg/202401012307093.png" alt="使用本地代理命令"></a></p>
+<p>以后在使用 <code>git</code> 等命令之前，只需要在终端中输入 <code>proxy</code> 命令，即可使用本地代理。</p>
+<h4 id="4-2-1-WSL-配置本地代理"><a href="#4-2-1-WSL-配置本地代理" class="headerlink" title="4.2.1 WSL 配置本地代理"></a>4.2.1 WSL 配置本地代理</h4><pre class="line-numbers language-none"><code class="language-none">host_ip&#x3D;$(cat &#x2F;etc&#x2F;resolv.conf |grep &quot;nameserver&quot; |cut -f 2 -d &quot; &quot;)
+# 为 curl wget git npm apt 等设置代理
+proxy () &#123;
+  export ALL_PROXY&#x3D;&quot;http:&#x2F;&#x2F;$host_ip:10811&quot;
+  export all_proxy&#x3D;&quot;http:&#x2F;&#x2F;$host_ip:10811&quot;
+ # echo -e &quot;Acquire::http::Proxy \&quot;http:&#x2F;&#x2F;$host_ip:10811\&quot;;&quot; | sudo tee -a &#x2F;etc&#x2F;apt&#x2F;apt.conf &gt; &#x2F;dev&#x2F;null
+ # echo -e &quot;Acquire::https::Proxy \&quot;http:&#x2F;&#x2F;$host_ip:10811\&quot;;&quot; | sudo tee -a &#x2F;etc&#x2F;apt&#x2F;apt.conf &gt; &#x2F;dev&#x2F;null
+&#125;
+
+# 取消代理
+unproxy () &#123;
+  unset ALL_PROXY
+  unset all_proxy
+ # sudo sed -i -e &#39;&#x2F;Acquire::http::Proxy&#x2F;d&#39; &#x2F;etc&#x2F;apt&#x2F;apt.conf
+ # sudo sed -i -e &#39;&#x2F;Acquire::https::Proxy&#x2F;d&#39; &#x2F;etc&#x2F;apt&#x2F;apt.conf
+&#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>这里假设宿主机局域网 http 代理的端口是<code>10811</code>。</p>
+<h3 id="4-3-卸载-Oh-My-Zsh"><a href="#4-3-卸载-Oh-My-Zsh" class="headerlink" title="4.3 卸载 Oh My Zsh"></a>4.3 卸载 Oh My Zsh</h3><ul>
+<li><p>  终端输入 ：</p>
+<pre class="line-numbers language-none"><code class="language-none">uninstall_oh_my_zsh
+Are you sure you want to remove Oh My Zsh? [y&#x2F;N] Y<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+</li>
+<li><p>  终端提示信息：</p>
+<pre class="line-numbers language-none"><code class="language-none">Removing ~&#x2F;.oh-my-zsh
+Looking for original zsh config...
+Found ~&#x2F;.zshrc.pre-oh-my-zsh -- Restoring to ~&#x2F;.zshrc
+Found ~&#x2F;.zshrc -- Renaming to ~&#x2F;.zshrc.omz-uninstalled-20170820200007
+Your original zsh config was restored. Please restart your session.
+Thanks for trying out Oh My Zsh. It&#39;s been uninstalled.<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+</li>
+</ul>
+<h3 id="4-4-手动更新-Oh-My-Zsh"><a href="#4-4-手动更新-Oh-My-Zsh" class="headerlink" title="4.4 手动更新 Oh My Zsh"></a>4.4 手动更新 Oh My Zsh</h3><ul>
+<li>  <strong>Oh My Zsh</strong> 的自动更新提示误触关掉了解决办法</li>
+<li>  打开终端输入：<pre class="line-numbers language-none"><code class="language-none">upgrade_oh_my_zsh<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+</li>
+</ul>
+
+                
+            </div>
+            <hr/>
+
+            
+
+    <div class="reprint" id="reprint-statement">
+        
+            <div class="reprint__author">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-user">
+                        文章作者:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    <a href="/about" rel="external nofollow noreferrer">kukuqi666</a>
+                </span>
+            </div>
+            <div class="reprint__type">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-link">
+                        文章链接:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    <a href="https://kukuqi666.github.io/2024/08/08/qi-ta/zsh-an-zhuang-yu-pei-zhi/">https://kukuqi666.github.io/2024/08/08/qi-ta/zsh-an-zhuang-yu-pei-zhi/</a>
+                </span>
+            </div>
+            <div class="reprint__notice">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-copyright">
+                        版权声明:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    本博客所有文章除特別声明外，均采用
+                    <a href="https://creativecommons.org/licenses/by/4.0/deed.zh" rel="external nofollow noreferrer" target="_blank">CC BY 4.0</a>
+                    许可协议。转载请注明来源
+                    <a href="/about" target="_blank">kukuqi666</a>
+                    !
+                </span>
+            </div>
+        
+    </div>
+
+    <script async defer>
+      document.addEventListener("copy", function (e) {
+        let toastHTML = '<span>复制成功，请遵循本文的转载规则</span><button class="btn-flat toast-action" onclick="navToReprintStatement()" style="font-size: smaller">查看</a>';
+        M.toast({html: toastHTML})
+      });
+
+      function navToReprintStatement() {
+        $("html, body").animate({scrollTop: $("#reprint-statement").offset().top - 80}, 800);
+      }
+    </script>
+
+
+
+            <div class="tag_share" style="display: block;">
+                <div class="post-meta__tag-list" style="display: inline-block;">
+                    
+                        <div class="article-tag">
+                            
+                                <a href="/tags/exploit-%E7%BB%88%E7%AB%AF-oh-my-zsh/">
+                                    <span class="chip bg-color">exploit 终端 oh-my-zsh</span>
+                                </a>
+                            
+                        </div>
+                    
+                </div>
+                <div class="post_share" style="zoom: 80%; width: fit-content; display: inline-block; float: right; margin: -0.15rem 0;">
+                    <link rel="stylesheet" type="text/css" href="/libs/share/css/share.min.css">
+<div id="article-share">
+
+    
+    <div class="social-share" data-sites="twitter,facebook,google,qq,qzone,wechat,weibo,douban,linkedin" data-wechat-qrcode-helper="<p>微信扫一扫即可分享！</p>"></div>
+    <script src="/libs/share/js/social-share.min.js"></script>
+    
+
+    
+
+</div>
+
+                </div>
+            </div>
+            
+                <style>
+    #reward {
+        margin: 40px 0;
+        text-align: center;
+    }
+
+    #reward .reward-link {
+        font-size: 1.4rem;
+        line-height: 38px;
+    }
+
+    #reward .btn-floating:hover {
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2), 0 5px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    #rewardModal {
+        width: 320px;
+        height: 350px;
+    }
+
+    #rewardModal .reward-title {
+        margin: 15px auto;
+        padding-bottom: 5px;
+    }
+
+    #rewardModal .modal-content {
+        padding: 10px;
+    }
+
+    #rewardModal .close {
+        position: absolute;
+        right: 15px;
+        top: 15px;
+        color: rgba(0, 0, 0, 0.5);
+        font-size: 1.3rem;
+        line-height: 20px;
+        cursor: pointer;
+    }
+
+    #rewardModal .close:hover {
+        color: #ef5350;
+        transform: scale(1.3);
+        -moz-transform:scale(1.3);
+        -webkit-transform:scale(1.3);
+        -o-transform:scale(1.3);
+    }
+
+    #rewardModal .reward-tabs {
+        margin: 0 auto;
+        width: 210px;
+    }
+
+    .reward-tabs .tabs {
+        height: 38px;
+        margin: 10px auto;
+        padding-left: 0;
+    }
+
+    .reward-content ul {
+        padding-left: 0 !important;
+    }
+
+    .reward-tabs .tabs .tab {
+        height: 38px;
+        line-height: 38px;
+    }
+
+    .reward-tabs .tab a {
+        color: #fff;
+        background-color: #ccc;
+    }
+
+    .reward-tabs .tab a:hover {
+        background-color: #ccc;
+        color: #fff;
+    }
+
+    .reward-tabs .wechat-tab .active {
+        color: #fff !important;
+        background-color: #22AB38 !important;
+    }
+
+    .reward-tabs .alipay-tab .active {
+        color: #fff !important;
+        background-color: #019FE8 !important;
+    }
+
+    .reward-tabs .reward-img {
+        width: 210px;
+        height: 210px;
+    }
+</style>
+
+<div id="reward">
+    <a href="#rewardModal" class="reward-link modal-trigger btn-floating btn-medium waves-effect waves-light red">赏</a>
+
+    <!-- Modal Structure -->
+    <div id="rewardModal" class="modal">
+        <div class="modal-content">
+            <a class="close modal-close"><i class="fas fa-times"></i></a>
+            <h4 class="reward-title">你的赏识是我前进的动力</h4>
+            <div class="reward-content">
+                <div class="reward-tabs">
+                    <ul class="tabs row">
+                        <li class="tab col s6 alipay-tab waves-effect waves-light"><a href="#alipay">支付宝</a></li>
+                        <li class="tab col s6 wechat-tab waves-effect waves-light"><a href="#wechat">微 信</a></li>
+                    </ul>
+                    <div id="alipay">
+                        <img src="/medias/reward/alipay.jpg" class="reward-img" alt="支付宝打赏二维码">
+                    </div>
+                    <div id="wechat">
+                        <img src="/medias/reward/wechat.png" class="reward-img" alt="微信打赏二维码">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    $(function () {
+        $('.tabs').tabs();
+    });
+</script>
+
+            
+        </div>
+    </div>
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+        <style>
+    .mvaline-card {
+        margin: 1.5rem auto;
+    }
+
+    .mvaline-card .card-content {
+        padding: 20px 20px 5px 20px;
+    }
+</style>
+
+<div class="card mvaline-card" data-aos="fade-up">
+    <div class="comment_headling" style="font-size: 20px; font-weight: 700; position: relative; padding-left: 20px; top: 15px; padding-bottom: 5px;">
+        <i class="fas fa-comments fa-fw" aria-hidden="true"></i>
+        <span>评论</span>
+    </div>
+    <div id="mvcomments" class="card-content" style="display: grid">
+    </div>
+</div>
+
+<script src="/libs/minivaline/MiniValine.js"></script>
+<script>
+    new MiniValine({
+        el: '#mvcomments',
+        appId: 'zhM0AOiqle17oPoE84CoYw1e-gzGzoHsz',
+        appKey: 'itmzT1JbXfAjVwMqDhGPzU45',
+        mode: 'DesertsP',
+        placeholder: 'Write a Comment',
+        pathname: window.location.pathname,
+        lang: '',
+        adminEmailMd5: 'de8a7aa53d07e6b6bceb45c64027763d',
+        tagMeta: ["管理员", "小伙伴", "访客"],
+        master: ["de8a7aa53d07e6b6bceb45c64027763d"],
+        friends: ["b5bd5d836c7a0091aa8473e79ed4c25e", "adb7d1cd192658a55c0ad22a3309cecf", "3ce1e6c77b4910f1871106cb30dc62b0", "cfce8dc43725cc14ffcd9fb4892d5bfc"],
+        math: true,
+        md: true,
+        enableQQ: false,
+        NoRecordIP: false,
+        visitor: true,
+        maxNest: 6,
+        pageSize: 6,
+        serverURLs: '',
+        emoticonUrl: ["https://cdn.jsdelivr.net/npm/alus@latest", "https://cdn.jsdelivr.net/gh/MiniValine/qq@latest", "https://cdn.jsdelivr.net/gh/MiniValine/Bilibilis@latest", "https://cdn.jsdelivr.net/gh/MiniValine/tieba@latest", "https://cdn.jsdelivr.net/gh/MiniValine/twemoji@latest", "https://cdn.jsdelivr.net/gh/MiniValine/weibo@latest"],
+    });
+</script>
+
+    
+
+    
+
+    
+
+<article id="prenext-posts" class="prev-next articles">
+    <div class="row article-row">
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge left-badge text-color">
+                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+            <div class="card">
+                <a href="/2024/08/08/qi-ta/openclash/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/21.jpg" class="responsive-img" alt="OpenClash">
+                        
+                        <span class="card-title">OpenClash</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            OpenClash 安装和简单使用教程及常见错误解决
+                        
+                    </div>
+                    <div class="publish-info">
+                        <span class="publish-date">
+                            <i class="far fa-clock fa-fw icon-date"></i>2024-08-08
+                        </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/Exploit/" class="post-category">
+                                    Exploit
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/exploit-openwrt-Clash-%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91/">
+                        <span class="chip bg-color">exploit openwrt Clash 科学上网</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
+            </div>
+            <div class="card">
+                <a href="/2024/08/08/qi-ta/kali-shou-gong-kai-qi-ssh-ming-ling/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/11.jpg" class="responsive-img" alt="kali手工开启ssh命令">
+                        
+                        <span class="card-title">kali手工开启ssh命令</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            kali手工开启ssh(端口22）命令操作方法
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2024-08-08
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/Exploit/" class="post-category">
+                                    Exploit
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/exploit-%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F-Linux-kali/">
+                        <span class="chip bg-color">exploit 操作系统 Linux kali</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+    </div>
+</article>
+
+</div>
+
+
+<script>
+    $('#articleContent').on('copy', function (e) {
+        // IE8 or earlier browser is 'undefined'
+        if (typeof window.getSelection === 'undefined') return;
+
+        var selection = window.getSelection();
+        // if the selection is short let's not annoy our users.
+        if (('' + selection).length < Number.parseInt('120')) {
+            return;
+        }
+
+        // create a div outside of the visible area and fill it with the selected text.
+        var bodyElement = document.getElementsByTagName('body')[0];
+        var newdiv = document.createElement('div');
+        newdiv.style.position = 'absolute';
+        newdiv.style.left = '-99999px';
+        bodyElement.appendChild(newdiv);
+        newdiv.appendChild(selection.getRangeAt(0).cloneContents());
+
+        // we need a <pre> tag workaround.
+        // otherwise the text inside "pre" loses all the line breaks!
+        if (selection.getRangeAt(0).commonAncestorContainer.nodeName === 'PRE') {
+            newdiv.innerHTML = "<pre>" + newdiv.innerHTML + "</pre>";
+        }
+
+        var url = document.location.href;
+        newdiv.innerHTML += '<br />'
+            + '来源: 如梦初醒<br />'
+            + '文章作者: kukuqi666<br />'
+            + '文章链接: <a href="' + url + '">' + url + '</a><br />'
+            + '本文章著作权归作者所有，任何形式的转载都请注明出处。';
+
+        selection.selectAllChildren(newdiv);
+        window.setTimeout(function () {bodyElement.removeChild(newdiv);}, 200);
+    });
+</script>
+
+
+<!-- 代码块功能依赖 -->
+<script type="text/javascript" src="/libs/codeBlock/codeBlockFuction.js"></script>
+
+<!-- 代码语言 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeLang.js"></script>
+
+
+<!-- 代码块复制 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeCopy.js"></script>
+
+
+<!-- 代码块收缩 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeShrink.js"></script>
+
+
+    </div>
+    <div id="toc-aside" class="expanded col l3 hide-on-med-and-down">
+        <div class="toc-widget card" style="background-color: white;">
+            <div class="toc-title"><i class="far fa-list-alt"></i>&nbsp;&nbsp;目录</div>
+            <div id="toc-content"></div>
+        </div>
+    </div>
+</div>
+
+<!-- TOC 悬浮按钮. -->
+
+<div id="floating-toc-btn" class="hide-on-med-and-down">
+    <a class="btn-floating btn-large bg-color">
+        <i class="fas fa-list-ul"></i>
+    </a>
+</div>
+
+
+<script src="/libs/tocbot/tocbot.min.js"></script>
+<script>
+    $(function () {
+        tocbot.init({
+            tocSelector: '#toc-content',
+            contentSelector: '#articleContent',
+            headingsOffset: -($(window).height() * 0.4 - 45),
+            collapseDepth: Number('0'),
+            headingSelector: 'h2, h3, h4'
+        });
+
+        // modify the toc link href to support Chinese.
+        let i = 0;
+        let tocHeading = 'toc-heading-';
+        $('#toc-content a').each(function () {
+            $(this).attr('href', '#' + tocHeading + (++i));
+        });
+
+        // modify the heading title id to support Chinese.
+        i = 0;
+        $('#articleContent').children('h2, h3, h4').each(function () {
+            $(this).attr('id', tocHeading + (++i));
+        });
+
+        // Set scroll toc fixed.
+        let tocHeight = parseInt($(window).height() * 0.4 - 64);
+        let $tocWidget = $('.toc-widget');
+        $(window).scroll(function () {
+            let scroll = $(window).scrollTop();
+            /* add post toc fixed. */
+            if (scroll > tocHeight) {
+                $tocWidget.addClass('toc-fixed');
+            } else {
+                $tocWidget.removeClass('toc-fixed');
+            }
+        });
+
+        
+        /* 修复文章卡片 div 的宽度. */
+        let fixPostCardWidth = function (srcId, targetId) {
+            let srcDiv = $('#' + srcId);
+            if (srcDiv.length === 0) {
+                return;
+            }
+
+            let w = srcDiv.width();
+            if (w >= 450) {
+                w = w + 21;
+            } else if (w >= 350 && w < 450) {
+                w = w + 18;
+            } else if (w >= 300 && w < 350) {
+                w = w + 16;
+            } else {
+                w = w + 14;
+            }
+            $('#' + targetId).width(w);
+        };
+
+        // 切换TOC目录展开收缩的相关操作.
+        const expandedClass = 'expanded';
+        let $tocAside = $('#toc-aside');
+        let $mainContent = $('#main-content');
+        $('#floating-toc-btn .btn-floating').click(function () {
+            if ($tocAside.hasClass(expandedClass)) {
+                $tocAside.removeClass(expandedClass).hide();
+                $mainContent.removeClass('l9');
+            } else {
+                $tocAside.addClass(expandedClass).show();
+                $mainContent.addClass('l9');
+            }
+            fixPostCardWidth('artDetail', 'prenext-posts');
+        });
+        
+    });
+</script>
+
+    
+
+</main>
+
+
+
+
+    <footer class="page-footer bg-color">
+    
+
+    <div class="container row center-align" style="margin-bottom: 15px !important;">
+        <div class="col s12 m8 l8 copy-right">
+            Copyright&nbsp;&copy;
+            
+                <span id="year">2018-2024</span>
+            
+            <span id="year">2018</span>
+            <a href="/about" target="_blank">kukuqi666</a>
+            |&nbsp;Powered by&nbsp;<a href="https://hexo.io/" target="_blank">Hexo</a>
+            |&nbsp;Theme&nbsp;<a href="https://github.com/blinkfox/hexo-theme-matery" target="_blank">Matery</a>
+            <br>
+            
+            &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
+                class="white-color">201.5k</span>&nbsp;字
+            
+            
+            
+            
+            
+            
+            <span id="busuanzi_container_site_pv">
+                |&nbsp;<i class="far fa-eye"></i>&nbsp;总访问量:&nbsp;<span id="busuanzi_value_site_pv"
+                    class="white-color"></span>&nbsp;次
+            </span>
+            
+            
+            <span id="busuanzi_container_site_uv">
+                |&nbsp;<i class="fas fa-users"></i>&nbsp;总访问人数:&nbsp;<span id="busuanzi_value_site_uv"
+                    class="white-color"></span>&nbsp;人
+            </span>
+            
+            <br>
+            
+            <span id="sitetime">载入运行时间...</span>
+            <script>
+                function siteTime() {
+                    var seconds = 1000;
+                    var minutes = seconds * 60;
+                    var hours = minutes * 60;
+                    var days = hours * 24;
+                    var years = days * 365;
+                    var today = new Date();
+                    var startYear = "2018";
+                    var startMonth = "09";
+                    var startDate = "20";
+                    var startHour = "0";
+                    var startMinute = "0";
+                    var startSecond = "0";
+                    var todayYear = today.getFullYear();
+                    var todayMonth = today.getMonth() + 1;
+                    var todayDate = today.getDate();
+                    var todayHour = today.getHours();
+                    var todayMinute = today.getMinutes();
+                    var todaySecond = today.getSeconds();
+                    var t1 = Date.UTC(startYear, startMonth, startDate, startHour, startMinute, startSecond);
+                    var t2 = Date.UTC(todayYear, todayMonth, todayDate, todayHour, todayMinute, todaySecond);
+                    var diff = t2 - t1;
+                    var diffYears = Math.floor(diff / years);
+                    var diffDays = Math.floor((diff / days) - diffYears * 365);
+                    var diffHours = Math.floor((diff - (diffYears * 365 + diffDays) * days) / hours);
+                    var diffMinutes = Math.floor((diff - (diffYears * 365 + diffDays) * days - diffHours * hours) /
+                        minutes);
+                    var diffSeconds = Math.floor((diff - (diffYears * 365 + diffDays) * days - diffHours * hours -
+                        diffMinutes * minutes) / seconds);
+                    if (startYear == todayYear) {
+                        document.getElementById("year").innerHTML = todayYear;
+                        document.getElementById("sitetime").innerHTML = "本站已安全运行 " + diffDays + " 天 " + diffHours +
+                            " 小时 " + diffMinutes + " 分钟 " + diffSeconds + " 秒";
+                    } else {
+                        document.getElementById("year").innerHTML = startYear + " - " + todayYear;
+                        document.getElementById("sitetime").innerHTML = "本站已安全运行 " + diffYears + " 年 " + diffDays +
+                            " 天 " + diffHours + " 小时 " + diffMinutes + " 分钟 " + diffSeconds + " 秒";
+                    }
+                }
+                setInterval(siteTime, 1000);
+            </script>
+            
+            <br>
+            
+        </div>
+        <div class="col s12 m4 l4 social-link social-statis">
+    <a href="https://github.com/kukuqi666" class="tooltipped" target="_blank" data-tooltip="访问我的GitHub" data-position="top" data-delay="50">
+        <i class="fab fa-github"></i>
+    </a>
+
+
+
+    <a href="mailto:kukuqi666@gmail.com" class="tooltipped" target="_blank" data-tooltip="邮件联系我" data-position="top" data-delay="50">
+        <i class="fas fa-envelope-open"></i>
+    </a>
+
+
+
+
+
+
+
+    <a href="tencent://AddContact/?fromId=50&fromSubId=1&subcmd=all&uin=2506230866" class="tooltipped" target="_blank" data-tooltip="QQ联系我: 2506230866" data-position="top" data-delay="50">
+        <i class="fab fa-qq"></i>
+    </a>
+
+
+
+
+
+
+
+    <a href="/atom.xml" class="tooltipped" target="_blank" data-tooltip="RSS 订阅" data-position="top" data-delay="50">
+        <i class="fas fa-rss"></i>
+    </a>
+
+</div>
+    </div>
+</footer>
+
+<div class="progress-bar"></div>
+
+
+    <!-- 搜索遮罩框 -->
+<div id="searchModal" class="modal">
+    <div class="modal-content">
+        <div class="search-header">
+            <span class="title"><i class="fas fa-search"></i>&nbsp;&nbsp;搜索</span>
+            <input type="search" id="searchInput" name="s" placeholder="请输入搜索的关键字"
+                   class="search-input">
+        </div>
+        <div id="searchResult"></div>
+    </div>
+</div>
+
+<script type="text/javascript">
+    $(function () {
+        var searchFunc = function (path, search_id, content_id) {
+            'use strict';
+            $.ajax({
+                url: path,
+                dataType: "xml",
+                success: function (xmlResponse) {
+                    // get the contents from search data
+                    var datas = $("entry", xmlResponse).map(function () {
+                        return {
+                            title: $("title", this).text(),
+                            content: $("content", this).text(),
+                            url: $("url", this).text()
+                        };
+                    }).get();
+                    var $input = document.getElementById(search_id);
+                    var $resultContent = document.getElementById(content_id);
+                    $input.addEventListener('input', function () {
+                        var str = '<ul class=\"search-result-list\">';
+                        var keywords = this.value.trim().toLowerCase().split(/[\s\-]+/);
+                        $resultContent.innerHTML = "";
+                        if (this.value.trim().length <= 0) {
+                            return;
+                        }
+                        // perform local searching
+                        datas.forEach(function (data) {
+                            var isMatch = true;
+                            var data_title = data.title.trim().toLowerCase();
+                            var data_content = data.content.trim().replace(/<[^>]+>/g, "").toLowerCase();
+                            var data_url = data.url;
+                            data_url = data_url.indexOf('/') === 0 ? data.url : '/' + data_url;
+                            var index_title = -1;
+                            var index_content = -1;
+                            var first_occur = -1;
+                            // only match artiles with not empty titles and contents
+                            if (data_title !== '' && data_content !== '') {
+                                keywords.forEach(function (keyword, i) {
+                                    index_title = data_title.indexOf(keyword);
+                                    index_content = data_content.indexOf(keyword);
+                                    if (index_title < 0 && index_content < 0) {
+                                        isMatch = false;
+                                    } else {
+                                        if (index_content < 0) {
+                                            index_content = 0;
+                                        }
+                                        if (i === 0) {
+                                            first_occur = index_content;
+                                        }
+                                    }
+                                });
+                            }
+                            // show search results
+                            if (isMatch) {
+                                str += "<li><a href='" + data_url + "' class='search-result-title'>" + data_title + "</a>";
+                                var content = data.content.trim().replace(/<[^>]+>/g, "");
+                                if (first_occur >= 0) {
+                                    // cut out 100 characters
+                                    var start = first_occur - 20;
+                                    var end = first_occur + 80;
+                                    if (start < 0) {
+                                        start = 0;
+                                    }
+                                    if (start === 0) {
+                                        end = 100;
+                                    }
+                                    if (end > content.length) {
+                                        end = content.length;
+                                    }
+                                    var match_content = content.substr(start, end);
+                                    // highlight all keywords
+                                    keywords.forEach(function (keyword) {
+                                        var regS = new RegExp(keyword, "gi");
+                                        match_content = match_content.replace(regS, "<em class=\"search-keyword\">" + keyword + "</em>");
+                                    });
+
+                                    str += "<p class=\"search-result\">" + match_content + "...</p>"
+                                }
+                                str += "</li>";
+                            }
+                        });
+                        str += "</ul>";
+                        $resultContent.innerHTML = str;
+                    });
+                }
+            });
+        };
+
+        searchFunc('/search.xml', 'searchInput', 'searchResult');
+    });
+</script>
+
+    <!-- 回到顶部按钮 -->
+<div id="backTop" class="top-scroll">
+    <a class="btn-floating btn-large waves-effect waves-light" href="#!">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+</div>
+
+
+    <script src="/libs/materialize/materialize.min.js"></script>
+    <script src="/libs/masonry/masonry.pkgd.min.js"></script>
+    <script src="/libs/aos/aos.js"></script>
+    <script src="/libs/scrollprogress/scrollProgress.min.js"></script>
+    <script src="/libs/lightGallery/js/lightgallery-all.min.js"></script>
+    <script src="/js/matery.js"></script>
+
+    <!-- Baidu Analytics -->
+
+    <!-- Baidu Push -->
+
+<script>
+    (function () {
+        var bp = document.createElement('script');
+        var curProtocol = window.location.protocol.split(':')[0];
+        if (curProtocol === 'https') {
+            bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+        } else {
+            bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+        }
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(bp, s);
+    })();
+</script>
+
+    
+    <script src="/libs/others/clicklove.js" async="async"></script>
+    
+    
+    <script async src="/libs/others/busuanzi.pure.mini.js"></script>
+    
+
+    
+
+    
+
+	
+    
+    <script type="text/javascript" color="0,0,255"
+        pointColor="0,0,255" opacity='0.7'
+        zIndex="-1" count="99"
+        src="/libs/background/canvas-nest.js"></script>
+    
+
+    
+    
+    <script type="text/javascript" size="150" alpha='0.6'
+        zIndex="-1" src="/libs/background/ribbon-refresh.min.js" async="async"></script>
+    
+
+    
+    <script type="text/javascript" src="/libs/background/ribbon-dynamic.js" async="async"></script>
+    
+
+    
+    <script src="/libs/instantpage/instantpage.js" type="module"></script>
+    
+
+</body>
+
+</html>
