@@ -270,6 +270,10 @@ myGallery:
     - /medias/featureimages/0.jpg
     - /medias/featureimages/1.jpg
     - /medias/featureimages/2.jpg
+    - /medias/featureimages/3.jpg
+    - /medias/featureimages/4.jpg
+    - /medias/featureimages/5.jpg 
+    - /medias/featureimages/6.jpg
 
 # Whether to display post-calender in the `archive` page
 # 设置在归档页面中是否显示'文章日历'控件
@@ -278,7 +282,11 @@ postCalendar: true
 # the Gitalk config，default disabled
 # Gitalk 评论模块的配置，默认为不激活
 gitalk:
-  enable: false
+  enable: true
+  clientID: 2e56c9f3a90b6e8fb4f0
+  clientSecret: ba491ea79bbff85ec80b88db79e210b474a9cbc8
+  repo: kukuqi666.github.io
+
   owner: kukuqi666
   repo: kukuqi666.github.io
   oauth:
@@ -291,11 +299,14 @@ gitalk:
 # Gitment 评论模块的配置，默认为不激活
 gitment:
   enable: false
-  owner:
-  repo:
+  owner: kukuqi666
+  repo: kukuqi666.github.io
   oauth:
-    clientId:
-    clientSecret:
+    client_id: 2e56c9f3a90b6e8fb4f0
+    client_secret: ba491ea79bbff85ec80b88db79e210b474a9cbc8
+  admin:
+    - kukuqi666
+
 
 # disqus config, default disabled
 # Disqus评论模块的配置，默认为不激活
@@ -329,7 +340,7 @@ valine:
 # MiniValine 评论模块的配置，默认为不激活，如要使用，就请激活该配置项，并设置 appId 和 appKey.
 # See: https://github.com/MiniValine/MiniValine
 minivaline:
-  enable: false
+  enable: true
   appId: zhM0AOiqle17oPoE84CoYw1e-gzGzoHsz # Your leancloud application appid
   appKey: itmzT1JbXfAjVwMqDhGPzU45 # Your leancloud application appkey
   mode: DesertsP # DesertsP or xCss
@@ -378,7 +389,7 @@ changyan:
 githubLink:
   enable: true
   url: https://github.com/kukuqi666/kukuqi666.github.io
-  title: Fork Me
+  title: Home page
 
 # The password verification feature of read post. To use this feature,
 # activate the configuration item and write the 'password' key and Cipher in the post's Front-matter.
