@@ -161,7 +161,7 @@ reward:
 # minCharNumber: Approve copyright information by copying at least how many characters.
 # 是否激活复制文章时追加博客和作者的版权信息.
 copyright:
-  enable: false
+  enable: true
   minCharNumber: 120 # 至少复制多少个字符就追加版权信息.
   description: 本文章著作权归作者所有，任何形式的转载都请注明出处。
 
@@ -283,10 +283,6 @@ postCalendar: true
 # Gitalk 评论模块的配置，默认为不激活
 gitalk:
   enable: true
-  clientID: 2e56c9f3a90b6e8fb4f0
-  clientSecret: ba491ea79bbff85ec80b88db79e210b474a9cbc8
-  repo: kukuqi666.github.io
-
   owner: kukuqi666
   repo: kukuqi666.github.io
   oauth:
@@ -340,7 +336,7 @@ valine:
 # MiniValine 评论模块的配置，默认为不激活，如要使用，就请激活该配置项，并设置 appId 和 appKey.
 # See: https://github.com/MiniValine/MiniValine
 minivaline:
-  enable: true
+  enable: false
   appId: zhM0AOiqle17oPoE84CoYw1e-gzGzoHsz # Your leancloud application appid
   appKey: itmzT1JbXfAjVwMqDhGPzU45 # Your leancloud application appkey
   mode: DesertsP # DesertsP or xCss
@@ -536,7 +532,7 @@ tuxiaochao:
 
 #背景canvas-nest
 canvas_nest:
-  enable: false
+  enable: true
   color: 0,0,255 # 线条颜色, 默认: '0,0,0' ；三个数字分别为(R,G,B)，注意用,分割
   pointColor: 0,0,255 # 交点颜色, 默认: '0,0,0' ；三个数字分别为(R,G,B)，注意用,分割
   opacity: 0.7 # 线条透明度（0~1）, 默认: 0.5
@@ -612,7 +608,7 @@ jsDelivr:
   
 # 网站背景图
 background:
-  enable: false
+  enable: true
   url: "https://cdn.jsdelivr.net/gh/Tokisaki-Galaxy/res/site/medias/background.jpg"
 
 # 说说 https://artitalk.js.org/
