@@ -299,7 +299,7 @@ gitalk:
 # the Gitment config，default disabled
 # Gitment 评论模块的配置，默认为不激活
 gitment:
-  enable: true
+  enable: false
   owner: kukuqi666
   repo: kukuqi666.github.io
   oauth:
