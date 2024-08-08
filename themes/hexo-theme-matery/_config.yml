@@ -291,8 +291,8 @@ gitalk:
   owner: kukuqi666
   repo: kukuqi666.github.io
   oauth:
-    clientId: 2e56c9f3a90b6e8fb4f0
-    clientSecret: ba491ea79bbff85ec80b88db79e210b474a9cbc8
+    clientId: Ov23liy6KjV8GDJp384l
+    clientSecret: bcfb113981473548bb83edc422f6e07a63678b95
   admin:
     - kukuqi666
 
